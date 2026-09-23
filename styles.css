@@ -197,3 +197,44 @@ footer{
  .place-note{padding:22px}
  .place-note-grid{grid-template-columns:1fr}
 }
+
+/* Paris 2026 travel archive */
+.paris-hero{padding:118px 0 90px;max-width:960px}
+.paris-hero h1{font-size:clamp(3.6rem,10vw,8rem);line-height:.98;letter-spacing:-.055em;margin:10px 0 34px}
+.journey-grid{display:grid;grid-template-columns:1.45fr 1fr 1fr;gap:18px;padding:72px 0}
+.journey-card{display:block;min-height:330px;padding:30px;border:1px solid var(--line);background:var(--card);text-decoration:none}
+.journey-card.featured{background:var(--ink);color:var(--paper)}
+.journey-card.pending{opacity:.72}
+.journey-no,.journey-type{display:block;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase}
+.journey-type{margin-top:8px;color:var(--soft)}
+.journey-card.featured .journey-type{color:#cfc6b9}
+.journey-card h3{font-size:clamp(1.7rem,3vw,2.65rem);margin:42px 0 18px}
+.journey-card p{color:var(--soft)}
+.journey-card.featured p{color:#d9d1c6}
+.journey-link{display:inline-block;margin-top:22px;border-bottom:1px solid currentColor}
+.paris-index-preview{padding:76px 0 110px;border-top:1px solid var(--line)}
+.preview-row{display:grid;grid-template-columns:220px 1fr;gap:30px;padding:22px 0;border-bottom:1px solid var(--line)}
+.preview-row span{color:var(--soft)}
+.trip-note{display:grid;grid-template-columns:180px 1fr;gap:36px;padding:34px 0 58px;border-top:1px solid var(--line)}
+.trip-year{font:700 3rem/1 Georgia,serif;color:var(--accent)}
+.trip-note p{margin:0;max-width:700px;color:#49443e}
+.paris-stops{border-top:1px solid var(--line)}
+.stop-card{padding:52px 0;border-bottom:1px solid var(--line)}
+.stop-card.waiting{opacity:.62}
+.stop-topline,.stop-tags{display:flex;gap:16px;flex-wrap:wrap;color:var(--soft);font-size:.78rem;letter-spacing:.08em}
+.stop-card h2{font-size:clamp(2rem,5vw,4rem);margin:18px 0}
+.stop-card h2 a{text-decoration:none}
+.stop-card p{max-width:760px;color:#49443e}
+.stop-tags{margin-top:22px}
+.archive-axis{padding:90px 0}
+.axis-grid{margin-top:30px;display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.axis-grid>div{background:var(--paper);padding:26px;display:flex;flex-direction:column;gap:9px}
+.axis-grid span{color:var(--soft);font-size:.92rem}
+.article-nav{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){
+ .paris-hero{padding:76px 0 58px}
+ .journey-grid{grid-template-columns:1fr}
+ .journey-card{min-height:auto}
+ .preview-row,.trip-note{grid-template-columns:1fr;gap:8px}
+ .axis-grid{grid-template-columns:1fr}
+}
